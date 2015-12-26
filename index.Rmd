@@ -1,0 +1,51 @@
+---
+title       : Demo Shiny Application
+subtitle    : R Function grep
+author      : Chajda
+job         : 
+framework   : html5slides   # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+# Title : Demo Shiny Application
+## Subtitle : R Function grep
+Author : Chajda
+
+2015
+
+--- .class #id 
+
+## Context
+
+- Often it is necessary to match the sentences on the regular expression. For debugging regular expression fits small application that accepts as input a sentence regular expression and other specific parameters (eg. case sensitive, perl notation, etc.) and performs evaluate it.
+- Example
+```{r}
+grep(pattern='^\\w+\\s+\\w+$', x='Ahoj svete')
+```
+
+---
+
+## Implementation Details
+- Exercise assignment for a course on Developing Data Products (Coursera).
+- The application is written in R Shiny.
+- Uses grep function (see? In R grep command line)
+- Example
+```{r}
+grep(pattern='[a-z]+', x='AHOJ', ignore.case=FALSE)
+```
+- In other parameters are described as perl, value, fixed, useBytes, invert.
+
+---
+
+## Snapshot of application
+![Snapshot of application.](./assets/img/appka.png)
+
+---
+
+## Questions?
+
+## Thanks for your attention.

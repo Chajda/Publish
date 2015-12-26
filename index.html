@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Demo Shiny Application</title>
+	<meta name="description" content="Demo Shiny Application">
+	<meta name="author" content="Chajda">
+	<meta name="generator" content="slidify" />
+	
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/html5slides/default/styles.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />  <link rel="stylesheet" href = "assets/css/ribbons.css">
+  
+</head>
+<body style='display: none'>
+	<section class='slides layout-regular template-regular'>
+     <article class="" id="slide-1" style="background:;">
+  <h3>Title : Demo Shiny Application</h3>
+  <h2>Subtitle : R Function grep</h2>
+
+<p>Author : Chajda</p>
+
+<p>2015</p>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Context</h3>
+  <ul>
+<li>Often it is necessary to match the sentences on the regular expression. For debugging regular expression fits small application that accepts as input a sentence regular expression and other specific parameters (eg. case sensitive, perl notation, etc.) and performs evaluate it.</li>
+<li>Example</li>
+</ul>
+
+<pre><code class="r">grep(pattern=&#39;^\\w+\\s+\\w+$&#39;, x=&#39;Ahoj svete&#39;)
+</code></pre>
+
+<pre><code>## [1] 1
+</code></pre>
+
+</article>
+
+<article class="" id="slide-3" style="background:;">
+  <h3>Implementation Details</h3>
+  <ul>
+<li>Exercise assignment for a course on Developing Data Products (Coursera).</li>
+<li>The application is written in R Shiny.</li>
+<li>Uses grep function (see? In R grep command line)</li>
+<li>Example</li>
+</ul>
+
+<pre><code class="r">grep(pattern=&#39;[a-z]+&#39;, x=&#39;AHOJ&#39;, ignore.case=FALSE)
+</code></pre>
+
+<pre><code>## integer(0)
+</code></pre>
+
+<ul>
+<li>In other parameters are described as perl, value, fixed, useBytes, invert.</li>
+</ul>
+
+</article>
+
+<article class="" id="slide-4" style="background:;">
+  <h3>Snapshot of application</h3>
+  <p><img src="./assets/img/appka.png" alt="Snapshot of application."></p>
+
+</article>
+
+<article class="" id="slide-5" style="background:;">
+  <h3>Questions?</h3>
+  <h2>Thanks for your attention.</h2>
+
+</article>
+
+  </section>
+</body>
+  <!-- LOAD JAVASCRIPTS  -->
+	<script src='libraries/frameworks/html5slides/default/slides.js'></script>
+	<!-- LOAD HIGHLIGHTER JS FILES -->
+	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+	 
+	</html>
