@@ -58,4 +58,7 @@ grep(pattern='[a-z]+', x='AHOJ', ignore.case=FALSE)
 
 ## Questions?
 
-## Thanks for your attention.
+Thanks for your attention.
+
+Links:
+https://chajda.shinyapps.io/ShinyApp
